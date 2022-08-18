@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">QuizzGame</string>
+    <string name="title_activity_main">QuizzGame</string>
+    <string name="package_name">es.raned.quizzgame</string>
+    <string name="custom_url_scheme">es.raned.quizzgame</string>
+    <string name="admob_app_id">ca-app-pub-3967094906089260~4333214566</string>
+</resources>
