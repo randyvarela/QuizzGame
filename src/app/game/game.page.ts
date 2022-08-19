@@ -16,6 +16,7 @@ export class GamePage implements OnInit {
   wrongAnswers: any = [];
   questionTitle: any;
   questionAnswer: any;
+  helpAnswer: any;
   message: any;
   formSendAnswer: FormGroup;
   questionNumber: any;
@@ -61,6 +62,7 @@ export class GamePage implements OnInit {
         console.log("Quantity of questions: ", this.questionsLength)
         this.questionTitle = this.questions[this.questionNumber].question;
         this.questionAnswer = this.questions[this.questionNumber].answer;
+        this.helpAnswer = this.questions[this.questionNumber].help;
         console.log("queestionTitle: ",this.questionTitle)
         if(!this.questionTitle){
           this.presentAlertWin();          
@@ -102,8 +104,7 @@ export class GamePage implements OnInit {
 
   help(){
     this.showAdsInterstitial();
-    this.message = "La respuesta correcta es: " + this.questionAnswer
-    this.presentAlert1(this.message)
+    this.presentAlert1(this.helpAnswer)
   }
 
   async showAdsInterstitial(){
@@ -115,14 +116,14 @@ export class GamePage implements OnInit {
     await AdMob.showInterstitial();
   }
 
-  showBanner(){
+  /*showBanner(){
     const adId = isPlatform('ios') ? 'ios-ad-id' : 'android-ad-unit';
     const options: BannerAdOptions ={
       adId,
       adSize: BannerAdSize.ADAPTIVE_BANNER,
       position: BannerAdPosition.BOTTOM_CENTER
     }
-  }
+  }*/
 
   next(){  
     this.showAdsInterstitial();
@@ -183,7 +184,7 @@ export class GamePage implements OnInit {
   async presentAlertWin() {
     const alert = await this.alertController.create({
       header: "¡Enhorabuena!",
-      message: "Has completado todos los niveles, pronto actualizaremos la app con más niveles.",
+      message: "Has completado todos los niveles, pronto actualizaremos la app con más niveles. También puedes contribuir y ser parte del equipo aportando más preguntas",
       buttons: ["OK"],
     });
     await alert.present();

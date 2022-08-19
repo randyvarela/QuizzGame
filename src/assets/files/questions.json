@@ -2,67 +2,168 @@
     "data": [
         {
             "question": "SACO es a ASCO lo que 7683 es a...", 
-            "answer": "7638"
+            "answer": "6783",
+            "help": "S = 6, A = 7, C = 8, O = 3. Respuesta correcta: 6783"
         },
         {
-            "question": "¿Qué grupo continúa la siguiente serie: 2Z3, 4Y5, 6X7...?", 
-            "answer": "8W9"
+            "question": "¿Qué grupo continúa la siguiente serie: 2Z3, 4Y6, 6X9...?", 
+            "answer": "8W12",
+            "help": "En el primer número se suma 2. En la segunda letra se resta 1. En el tercer número se suman 3. Respuesta correcta: 8W12"
+        },
+        {
+            "question": "¿Cúantos lados tiene iguales un triángulo isósceles?", 
+            "answer": "2",
+            "help": "En geometría, un triángulo isósceles es un triángulo que tiene, al menos, dos lados de igual longitud. Al ángulo formado por los lados de igual longitud se le denomina ángulo en el vértice y al lado opuesto a él, lado base. Respuesta correcta: 2"
+        },
+        {
+            "question": "Calcula la suma 1578 + 285", 
+            "answer": "1863",
+            "help": "Respuesta correcta: 1863"
+        },
+        {
+            "question": "¿A cuántos mm equivale 0.5 m?", 
+            "answer": "5000",
+            "help": "Respuesta correcta: 5000"
+        },
+        {
+            "question": "Sigue la serie: 1,1,2,3,5,8,13,21...", 
+            "answer": "34",
+            "help": "Es la serie de fibonacci. Respuesta correcta: 34"
+        },
+        {
+            "question": "Calcula la siguiente operación 9+7x2", 
+            "answer": "23",
+            "help": "7 x 2 = 14 + 9 = 23. Respuesta correcta: 23"
+        },
+        {
+            "question": "¿Cuál es el resultado de 2 elevado a 5?", 
+            "answer": "32",
+            "help": "2 x 2 x 2 x 2 x 2= 32. Respuesta correcta: 32"
         },
         {
             "question": "Si en una pecera hay 135 peces y 24 de ellos se ahogan. ¿Cuántos peces quedan?", 
-            "answer": "135"
+            "answer": "135",
+            "help": "Los peces siguen estando aunque se ahoguen. Respuesta correcta: 34"
         },
         {
-            "question": "Supongamos que tienes 4 perros que alimentar: Juan, Esther, Pablo y Ana. Ana come más que Juan, Pablo come más que Juan y menos que Esther, pero Esther, come más que Ana. ¿Cuál de los 4 es el que que menos come?",
-            "answer": "Juan"
+            "question": "¿Cuál es la equivalencia del siguiente número romano? XLV", 
+            "answer": "45",
+            "help": "50 - 10 + 5. Respuesta correcta: 45"
+        },
+        {
+            "question": "Supongamos que tienes 4 niños que alimentar: Juan, Esther, Pablo y Ana. Ana come más que Juan, Pablo come más que Juan y menos que Esther, pero Esther, come más que Ana. ¿Cuál de los 4 es el que que menos come?",
+            "answer": "Juan",
+            "help": "Ana > Juan. Pablo > Juan. Pablo < Esther. Esther > Ana. Por lo tanto Juan es el que menos come. Respuesta correcta: Juan"
+        },
+        {
+            "question": "Sigue la serie: A4, C12, E36... ",
+            "answer": "G108",
+            "help": "La primera letra se le suma 2. El segundo número se multiplica por 3. Respuesta correcta: G108"
         },
         {
             "question": "Una madre tiene 40 años y su hijo tiene 10. ¿Cuántos años deben pasar para que la edad de la madre sea el triple que la edad de su hijo?", 
-            "answer": "5"
+            "answer": "5",
+            "help": "Cuando la madre tenga 45 años, su hijo tendrá 15. Respuesta correcta: 5"
         },
         {
             "question": "Hay 3 cajas de igual tamaño. Dentro de cada una de las tres cajas hay otras dos más pequeñas, y en cada una de ellas hay otras cuatro todavía más pequeñas. ¿Cuántas cajas hay en total?", 
-            "answer": "33"
+            "answer": "33",
+            "help": "1 caja grande + 2 medianas + 8 cajas pequeñas = 11 x 3 cajas grandes = 33. Respuesta correcta: 33"
         },
         {
             "question": "¿Cuántos cuartos son seis mitades?", 
-            "answer": "12"
+            "answer": "12",
+            "help": "1 mitad son 2 cuartos. Por lo tanto 6 mitades son 12 cuartos. Respuesta correcta: 12"
         },
         {
             "question": "Un hombre y medio se comen un lechón y medio en un minuto y medio. ¿Cuántos hombres hacen falta para comer 60 lechones en media hora?", 
-            "answer": "3"
+            "answer": "3",
+            "help": "1,5 hombres -> 1,5 lechón -> 1,5 min. X hombres -> 60 lechones -> 30 min. Respuesta correcta: 3"
         },
         {
-            "question": "Sigue la serie: 24,36,58,87,130.5...", 
-            "answer": "195.75"
+            "question": "Sigue la serie: 24,36,54...", 
+            "answer": "81",
+            "help": "Suma siempre la mitad del número. 24/2 = 12 + 24 = 36. 36/2 = 18 + 36 = 54. 54/2 = 27 + 54 = 81. Respuesta correcta: 81 "
+        },
+        {
+            "question": "¿Cúanto es el 60% de 175? ", 
+            "answer": "105",
+            "help": "175*0.60= 105. Respuesta correcta: 105"
         },
         {
             "question": "En un depósito hay un nivel muy bajo de agua, pero se duplica todos los días. En total, tarda 60 días en llenarse. ¿Cuánto tarda en llegar a la mitad?", 
-            "answer": "59"
+            "answer": "59",
+            "help": "Si cada día se duplica, entonces el día anterior tiene la mitad. Respuesta correcta: 59"
+        },
+        {
+            "question": "Sigue la serie: 48,8,35,7,24...", 
+            "answer": "6",
+            "help": "del 48 al 8 se divide 48/6= 8 del 35 al 7 se divide 35/5=7 siguiendo la secuencia nos damos cuenta que si cogemos los números en posición par(8,7,…) van bajando de uno en uno es decir 8, 7, entonces el que le seguiría es el 6. Respuesta correcta: 6"
         },
         {
             "question": "¿Cuántos kilos de mercancía hay que vender a 6 dólares para obtener 3726 dólares?", 
-            "answer": "621"
+            "answer": "621",
+            "help": "3726 / 6. Respuesta correcta: 6"
         },
         {
             "question": "Si 5 máquinas hacen 5 artículos en 5 minutos. ¿Cuántos minutos necesitarán 100 máquinas para hacer 100 artículos?", 
-            "answer": "5"
+            "answer": "5",
+            "help": "También 5 minutos ya que da igual el número de máquinas, siempre harán el mismo trabajo en el mismo tiempo. Respuesta correcta: 5"
+        },
+        {
+            "question": "Si doy 2 vueltas y media ¿Cúantos grados he girado?", 
+            "answer": "900",
+            "help": "Cada vuelta son 360º por lo que 2 vueltas y media son 360 + 360 + 180. Respuesta correcta: 900"
         },
         {
             "question": "Conduces un autobús en el que se montan 18 personas. En la siguiente parada se bajan 5 pero suben otras 13. Al llegar a la siguiente estación, se bajan 21 y suben 4. ¿Cuántas personas quedan en el autobús?", 
-            "answer": "9"
+            "answer": "9",
+            "help": "18 - 5 + 13 - 21 + 4 = 9. Respuesta correcta: 9"
         },
         {
             "question": "Un niño consume 250 gramos diarios de pan. ¿Cuál será el consumo diario en kilos de un comedor compuesto por 140 niños?", 
-            "answer": "35"
+            "answer": "35",
+            "help": "Regla de 3. Un niño es igual 0,25. 140 niños = x. Respuesta correcta: 35"
         },
         {
             "question": "Un granjero tiene 10 conejos, 20 caballos y 40 cerdos. Si llama caballos a los cerdos, ¿Cuántos caballos tendrá realmente?", 
-            "answer": "20"
+            "answer": "20",
+            "help": "Aunque llame como quiera a los cerdos, los caballos siguen siendo los mismos. Respuesta correcta: 20"
         },
         {
             "question": "Sigue la serie: 0,1,8,63,624...", 
-            "answer": "7775"
+            "answer": "7775",
+            "help": "La secuencia va con la potencia del número quitando la unidad al mismo. 1¹⁻¹- 1 = 0. 2²⁻¹ - 1 = 1. 3³⁻¹ - 1 = 8. 4⁴⁻¹ - 1 = 63... Respuesta correcta: 7775"
+        },
+        {
+            "question": "Calcula el logaritmo: log³(3)", 
+            "answer": "1",
+            "help": "Para calcular el logaritmo debes saber cual es la potencia de ³ para sacar el número 3. Respuesta correcta: 1"
+        },
+        {
+            "question": "Hay 12 personas en una habitación y un hombre llega y mata a 4 personas ¿Cuántas personas quedan?", 
+            "answer": "13",
+            "help": "Si hay 12 personas y entra 1, ya son 13, aunque el hombre mate a 4, siguen habiendo 13. Respuesta correcta: 13"
+        },
+        {
+            "question": "-7x = 15 - 2x", 
+            "answer": "-3",
+            "help": "-7x + 2x = -5x. -5x = 15. x=-3. Respuesta correcta: -3"
+        },
+        {
+            "question": "Calcula el logaritmo: log³(81)", 
+            "answer": "4",
+            "help": "Para calcular el logaritmo debes saber cual es la potencia de ³ para sacar el número 81. Respuesta correcta: 4"
+        },
+        {
+            "question": "¿Cúal es el número equivalente al siguiente número en notación científica? 5x10-³ ", 
+            "answer": "0,005",
+            "help": "El exponente es -3, por lo que es 10 a la potencia de menos 3. Cuando un exponente es negativo, la solución es un número menor que el número de origen o de base. Para averiguar nuestra respuesta, movemos el decimal a la izquierda 3 vez/veces:. Respuesta correcta: 0,005"
+        },
+        {
+            "question": "Un niño medía 165 cm, pero en un año creció 13,2 cm. ¿Qué porcentaje ha crecido respecto al año pasado?", 
+            "answer": "8",
+            "help": "Para calcular este porcentaje de incremento, dividimos la cantidad de incremento por la cantidad original y multiplicamos por 100. 13,2 / 165 x 100. Respuesta correcta: 8"
         }
       ]
 }
