@@ -32,7 +32,7 @@ export class GamePage implements OnInit {
     this.formSendAnswer = this.formBuilder.group({
       answer: ["", Validators.required],
     }); 
-   
+    this.getWrongAnswers();   
   }
 
   ngOnInit(){     
@@ -40,8 +40,8 @@ export class GamePage implements OnInit {
       requestTrackingAuthorization: true,
       testingDevices: ['YOURTESTDEVICECODE'],
       initializeForTesting: true,
-    });
-    this.getWrongAnswers();
+    });    
+    this.showBanner();
   }
 
   ionViewWillEnter() {
@@ -92,8 +92,7 @@ export class GamePage implements OnInit {
     if(value.answer == this.questionAnswer){
       console.log("Repuesta correcta")
       this.presentAlertCorrectAnswer();
-      this.formSendAnswer.reset()
-      
+      this.formSendAnswer.reset()      
     }else{
       console.log("Repuesta incorrecta")
       this.presentAlertWrongAnswer();
@@ -109,26 +108,31 @@ export class GamePage implements OnInit {
 
   async showAdsInterstitial(){
     const options: AdOptions ={
-      adId: 'ca-app-pub-3967094906089260/9010826173',
+      adId: '',
       isTesting: false,
     };
     await AdMob.prepareInterstitial(options);
     await AdMob.showInterstitial();
   }
 
-  /*showBanner(){
+  async showBanner(){
     const adId = isPlatform('ios') ? 'ios-ad-id' : 'android-ad-unit';
     const options: BannerAdOptions ={
-      adId,
+      adId: '',
       adSize: BannerAdSize.ADAPTIVE_BANNER,
-      position: BannerAdPosition.BOTTOM_CENTER
+      position: BannerAdPosition.BOTTOM_CENTER,
+      margin: 0,
+      isTesting: false,
     }
-  }*/
+  }
 
-  next(){  
+  nextLevelButton(){
     this.showAdsInterstitial();
-    if(this.questionNumber < this.questionsLength){
-      this.showAdsInterstitial();
+    this.next();
+  }
+
+  next(){      
+    if(this.questionNumber < this.questionsLength){      
       this.questionNumber = ++this.questionNumber;
       localStorage.setItem("questionNumber", JSON.stringify(this.questionNumber));
       console.log("questionNumberNext= ", this.questionNumber)
@@ -143,7 +147,6 @@ export class GamePage implements OnInit {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   } 
-
 
   async presentAlert1(message) {
     const alert = await this.alertController.create({
@@ -170,7 +173,7 @@ export class GamePage implements OnInit {
 
   async presentAlertWrongAnswer() {
     console.log(this.getRandomInt(0,9))
-    var message = this.wrongAnswers[this.getRandomInt(0,9)].answer
+    var message = this.wrongAnswers[this.getRandomInt(0,14)].answer
     const alert = await this.alertController.create({
       header: "Respuesta incorrecta",
       message: message,
