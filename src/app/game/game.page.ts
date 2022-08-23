@@ -51,6 +51,7 @@ export class GamePage implements OnInit {
     }
     this.getQuestions();
     console.log("QuestionNumber: ",this.questionNumber)
+    this.showBanner();
   }  
 
   getQuestions(){
@@ -124,6 +125,10 @@ export class GamePage implements OnInit {
       margin: 0,
       isTesting: false,
     }
+      margin: 60,
+      isTesting: this.adsTesting,
+    };
+    await AdMob.showBanner(options);
   }
 
   nextLevelButton(){
